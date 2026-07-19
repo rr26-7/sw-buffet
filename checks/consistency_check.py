@@ -92,13 +92,13 @@ def check_gate_numbering() -> None:
     dupes = {n for n in gate_nums if gate_nums.count(n) > 1}
     if dupes:
         err(f"[gates] duplicate gate numbers in page 12: {sorted(dupes)}")
-    if gate_nums and max(gate_nums) != 30:
-        err(f"[gates] max gate number is {max(gate_nums)}, enumeration rule expects 30")
-    missing = set(range(1, 31)) - set(gate_nums)
+    if gate_nums and max(gate_nums) != 31:
+        err(f"[gates] max gate number is {max(gate_nums)}, enumeration rule expects 31")
+    missing = set(range(1, 32)) - set(gate_nums)
     if missing:
         err(f"[gates] gate numbers missing from page 12: {sorted(missing)}")
-    if "26-30" not in text:
-        err("[gates] numbering-rule enumeration does not mention 26-30")
+    if "26-31" not in text:
+        err("[gates] numbering-rule enumeration does not mention 26-31")
 
 
 def check_financial_schema_single_source() -> None:
