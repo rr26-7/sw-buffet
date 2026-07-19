@@ -106,7 +106,7 @@ Four passes, your input between each, and at no point did it claim to be done.
     `13-cost-abuse-financial-risk-decisions.md` — decision catalogs (content artifacts, **not** agents).
   - `11-decision-steward-agent-prompt.md`, `14-frontier-capability-risk-agent-prompt.md` —
     the two dedicated role prompts (Decision Steward, Frontier Capability Risk Auditor).
-  - `12-code-quality-ai-implementation-gates.md` — code quality / AI implementation gates 1–30.
+  - `12-code-quality-ai-implementation-gates.md` — code quality / AI implementation gates 1–31.
 - `core/MINIMAL-CORE.md` — minimal deployable unit (progressive disclosure).
 - `checks/consistency_check.py` — CI consistency gates for the pack itself.
 - `evals/` — seeded scenarios with pass criteria for agents running the pack.

@@ -30,3 +30,4 @@ fail its own seeded scenarios provides false assurance.
 | 08 | FULL | Page-to-agent mapping (no agent-per-page) |
 | 09 | CORE | Minimal-core sufficiency + progressive disclosure |
 | 10 | FULL | Audit mode read-only + explicit mode switch |
+| 11 | FULL | Comment intent and decay / gate 31 marker convention |
