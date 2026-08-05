@@ -1,7 +1,10 @@
-# SW Buffet
+# SW Buffet - decision-governance pack for AI-assisted development
 
 Decision-governance pack for AI-driven software development. Written
 for frontier-model AI agents; humans interact through the AI.
+
+**Read the pack as a website:** https://rr26-7.github.io/sw-buffet/ - every
+page rendered and cross-linked, no cloning required.
 
 **What this is for:** exploratory, AI-assisted development of small-to-mid-size
 software. You bring a brief; the agent picks an audit or development run
@@ -93,22 +96,22 @@ Four passes, your input between each, and at no point did it claim to be done.
 
 - `pack/` — canonical pack content. Filenames are literal: always use the full
   name, never a page number on its own.
-  - `START-HERE.md` — decision phases, roles, usage modes, run modes, hard gates, conflict protocol.
-  - `00-deploy-this-agent-pack.md` — deploy entry point + human-readable workflow schema.
-  - `deployment-contract.md` — how the pack deploys to agent surfaces; page-to-agent mapping rule.
-  - `01-evidence-and-source-map.md` — evidence policy and source map.
-  - `02-decision-object-schema.md` — decision object schema.
-  - `03-product-requirements-decisions.md`, `04-architecture-topology-decisions.md`,
-    `05-api-integration-decisions.md`, `06-data-consistency-privacy-decisions.md`,
-    `07-security-compliance-decisions.md`, `08-reliability-observability-slo-decisions.md`,
-    `09-delivery-testing-supply-chain-decisions.md`,
-    `10-frontend-accessibility-commercial-decisions.md`,
-    `13-cost-abuse-financial-risk-decisions.md` — decision catalogs (content artifacts, **not** agents).
-  - `11-decision-steward-agent-prompt.md`, `14-frontier-capability-risk-agent-prompt.md` —
+  - [`START-HERE.md`](pack/START-HERE.md) — decision phases, roles, usage modes, run modes, hard gates, conflict protocol.
+  - [`00-deploy-this-agent-pack.md`](pack/00-deploy-this-agent-pack.md) — deploy entry point + human-readable workflow schema.
+  - [`deployment-contract.md`](pack/deployment-contract.md) — how the pack deploys to agent surfaces; page-to-agent mapping rule.
+  - [`01-evidence-and-source-map.md`](pack/01-evidence-and-source-map.md) — evidence policy and source map.
+  - [`02-decision-object-schema.md`](pack/02-decision-object-schema.md) — decision object schema.
+  - [`03-product-requirements-decisions.md`](pack/03-product-requirements-decisions.md), [`04-architecture-topology-decisions.md`](pack/04-architecture-topology-decisions.md),
+    [`05-api-integration-decisions.md`](pack/05-api-integration-decisions.md), [`06-data-consistency-privacy-decisions.md`](pack/06-data-consistency-privacy-decisions.md),
+    [`07-security-compliance-decisions.md`](pack/07-security-compliance-decisions.md), [`08-reliability-observability-slo-decisions.md`](pack/08-reliability-observability-slo-decisions.md),
+    [`09-delivery-testing-supply-chain-decisions.md`](pack/09-delivery-testing-supply-chain-decisions.md),
+    [`10-frontend-accessibility-commercial-decisions.md`](pack/10-frontend-accessibility-commercial-decisions.md),
+    [`13-cost-abuse-financial-risk-decisions.md`](pack/13-cost-abuse-financial-risk-decisions.md) — decision catalogs (content artifacts, **not** agents).
+  - [`11-decision-steward-agent-prompt.md`](pack/11-decision-steward-agent-prompt.md), [`14-frontier-capability-risk-agent-prompt.md`](pack/14-frontier-capability-risk-agent-prompt.md) —
     the two dedicated role prompts (Decision Steward, Frontier Capability Risk Auditor).
-  - `12-code-quality-ai-implementation-gates.md` — code quality / AI implementation gates 1–31.
-- `core/MINIMAL-CORE.md` — minimal deployable unit (progressive disclosure).
-- `checks/consistency_check.py` — CI consistency gates for the pack itself.
+  - [`12-code-quality-ai-implementation-gates.md`](pack/12-code-quality-ai-implementation-gates.md) — code quality / AI implementation gates 1–31.
+- [`core/MINIMAL-CORE.md`](core/MINIMAL-CORE.md) — minimal deployable unit (progressive disclosure).
+- [`checks/consistency_check.py`](checks/consistency_check.py) — CI consistency gates for the pack itself.
 - `evals/` — seeded scenarios with pass criteria for agents running the pack.
 
 ## The seven agents
