@@ -14,6 +14,8 @@ Supported surfaces
 - VS Code / GitHub Copilot: custom agents, custom instructions, prompt files, or equivalent current Copilot customization surfaces.
 - Cursor: agents, rules, skills, AGENTS.md, or equivalent current Cursor customization surfaces.
 - Antigravity / Gemini CLI: plugins, rules, skills, custom agents, or equivalent current surfaces.
+- Qwen Code: AGENTS.md-style guidance, subagents, skills, hooks, and MCP where the current Qwen Code surface supports them.
+- Kimi CLI: shared instructions and role prompts where the current Kimi CLI surface supports them.
 - Other IDEs: generate equivalent role prompts, shared instructions, and project-local rules if the IDE supports them.
 
 Generated content model
@@ -71,6 +73,9 @@ Supported surfaces addition: Claude Code, Claude Desktop / Cowork, and Claude Ag
 - Claude Agent SDK: programmatic agents with explicit tool allowlists, permission modes, and hooks for custom orchestration.
 Generated content mapping addition: P11 runtime governance must be expressed as enforceable configuration where the surface supports it (permissions, allowed tools, sandbox, hooks), not only as prose instructions.
 Validation addition: before deployment, verify current Claude documentation at https://code.claude.com/docs (Claude Code) and https://agentskills.io (skills format). If a Claude surface only supports instructions/rules, install instructions and state the limitation.
+Other frontier-model agent surfaces (deployment)
+Supported surfaces addition: Gemini CLI / Antigravity, Qwen Code, and Kimi CLI are supported target surfaces. Map shared instructions to that surface's context or memory file, the seven SW DEV role prompts to its subagent or skill mechanism, and approval/validation gates to its hook or permission mechanism where one exists.
+Validation addition: before deployment, verify the current documentation for the exact surface - Gemini CLI (https://geminicli.com/docs/), Qwen Code (https://qwenlm.github.io/qwen-code-docs/en/users/overview), Kimi CLI (https://github.com/MoonshotAI/kimi-cli). Support for subagents, skills, hooks, permissions, and MCP differs per surface and changes fast; if a surface only supports instructions/rules, install instructions and state the limitation.
 Anti-scraping and automated-abuse considerations
 
 Deployment content model addition

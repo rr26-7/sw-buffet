@@ -4,7 +4,7 @@ Purpose
 Short entry point for deploying the SW Pack from the repository into agent-capable software.
 
 Use this page when
-Use this page when you want an AI agent to install or refresh the SW Pack into Codex, VS Code / GitHub Copilot, Cursor, Antigravity / Gemini CLI, or another compatible IDE.
+Use this page when you want an AI agent to install or refresh the SW Pack into Claude Code, Codex, Gemini CLI / Antigravity, Qwen Code, Kimi CLI, Cursor, VS Code / GitHub Copilot, or another compatible agent surface or IDE.
 
 Source of truth
 This git repository is the source of truth for the SW Pack (v2). The deployment rules live in SW Pack - Deployment Contract. The prompts and instructions live in the SW Pack decision and role pages (pack/ and core/).

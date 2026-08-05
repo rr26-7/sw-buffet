@@ -28,8 +28,9 @@ It makes decisions visible so you can judge them.
 
 ## Usage
 
-Paste this into your agentic environment (Claude Code, Codex, Cursor, or any
-agent that can read a repository), with your own brief at the end:
+Paste this into your agentic environment - Claude Code, OpenAI Codex, Gemini
+CLI, Qwen Code, Kimi CLI, Cursor, or any other agent that can read a
+repository - with your own brief at the end:
 
     Use the SW Buffet pack for this work: https://github.com/rr26-7/sw-buffet
 
@@ -56,9 +57,10 @@ cleaner separation but cost substantially more tokens, since each one starts
 cold and reloads the pack. Drop that line from the prompt and everything runs
 in one context; some agent environments only allow subagents when you ask.
 
-Tested with Claude. The pack is not Claude-specific and should work with any
-frontier-model agent that can read a repository, though other models are
-untested.
+The pack is provider-neutral: plain markdown, no vendor-specific syntax, no
+runtime. It should work with any frontier-model agent that can read a
+repository. Testing so far has been with Claude models; other models are
+untested, and reports from other agents are welcome.
 
 ## Example workflow
 

@@ -97,6 +97,14 @@ Claude Code plugins: https://code.claude.com/docs/en/plugins
 Claude Code settings: https://code.claude.com/docs/en/settings
 Agent Skills standard: https://agentskills.io
 Source-use rule addition: Claude Desktop, Cowork, and Claude Agent SDK capabilities change frequently; verify current official documentation for the exact surface before claiming subagent, hook, sandbox, or approval behavior.
+Other frontier-model agent surface source map
+Last checked: 2026-08-05.
+Gemini CLI documentation: https://geminicli.com/docs/
+Gemini CLI repository: https://github.com/google-gemini/gemini-cli
+Qwen Code documentation: https://qwenlm.github.io/qwen-code-docs/en/users/overview
+Qwen Code repository: https://github.com/QwenLM/qwen-code
+Kimi CLI repository: https://github.com/MoonshotAI/kimi-cli
+Source-use rule addition: these surfaces iterate quickly and their feature sets differ; verify current documentation for subagent, skill, hook, permission, and MCP support on the exact surface before claiming it.
 Cost, abuse, and financial-risk considerations
 
 
