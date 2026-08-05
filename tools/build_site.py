@@ -140,6 +140,7 @@ PAGE = """<!DOCTYPE html>
 <title>{title}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{canonical}">
+<meta name="google-site-verification" content="lMvwrmrSELT6W16PIAL0xyTgNqap5ct33aVf-eLYr78">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
