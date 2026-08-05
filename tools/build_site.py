@@ -203,6 +203,19 @@ def main() -> int:
         f"User-agent: *\nAllow: /\n\nSitemap: {BASE_URL}/sitemap.xml\n", encoding="utf-8")
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
 
+    # Verbatim passthrough: search-engine verification files and anything else
+    # that must be served exactly as committed.
+    static = ROOT / "static"
+    copied = 0
+    if static.is_dir():
+        for f in static.rglob("*"):
+            if f.is_file():
+                dest = OUT / f.relative_to(static)
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                dest.write_bytes(f.read_bytes())
+                copied += 1
+        print(f"copied {copied} static file(s)")
+
     print(f"built {len(urls)} pages into {OUT}")
     return 0
 
