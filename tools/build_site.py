@@ -72,13 +72,15 @@ def rewrite_links(body: str, src_rel: Path, pages: dict[str, str]) -> str:
         if href.startswith(("http://", "https://", "#", "mailto:")):
             return m.group(0)
         target, _, frag = href.partition("#")
-        if not target.endswith(".md"):
-            return m.group(0)
         resolved = posixpath.normpath((src_rel.parent / target).as_posix())
         out = pages.get(resolved)
-        if not out:
+        if out:
+            url = f"{SITE_ROOT}/{out}"
+        elif (ROOT / resolved).exists():
+            # not a rendered page (scripts, dirs): send readers to the source
+            url = f"{BLOB}/{resolved}"
+        else:
             return m.group(0)
-        url = f"{SITE_ROOT}/{out}"
         return f'href="{url}{"#" + frag if frag else ""}"'
 
     return re.sub(r'href="([^"]+)"', repl, body)
