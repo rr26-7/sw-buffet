@@ -200,6 +200,12 @@ def main() -> int:
         sitemap.append(f"  <url><loc>{html.escape(u)}</loc></url>")
     sitemap.append("</urlset>")
     (OUT / "sitemap.xml").write_text("\n".join(sitemap) + "\n", encoding="utf-8")
+    # Only effective if this site ever moves to the root of a host (custom
+    # domain). Crawlers read robots.txt at the host root only, never from a
+    # subdirectory - https://developers.google.com/search/docs/crawling-indexing/robots/intro
+    # On rr26-7.github.io/sw-buffet/ the host root has no robots.txt, so
+    # everything is crawlable by default and the sitemap is registered through
+    # Search Console instead.
     (OUT / "robots.txt").write_text(
         f"User-agent: *\nAllow: /\n\nSitemap: {BASE_URL}/sitemap.xml\n", encoding="utf-8")
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
