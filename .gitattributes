@@ -1,0 +1,4 @@
+# LF everywhere: identical file bytes on every platform and checkout.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
