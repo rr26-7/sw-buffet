@@ -11,10 +11,10 @@ Metrics: authz test coverage, privilege escalation findings, session/token incid
 Sources: OWASP ASVS and relevant provider docs.
 
 Input validation and output encoding
-Options: schema validation, allowlists, contextual escaping, canonicalization, file/content validation.
+Options: schema validation, allowlists, contextual escaping, canonicalization, file/content validation, fuzzing of parsers on the trust boundary (page 09).
 Prefer when: every trust boundary has explicit validation and encoding rules.
 Avoid when: validation is UI-only or ad hoc string checks replace parser/schema support.
-Metrics: validation test coverage, injection findings, rejected malicious payloads, error leakage.
+Metrics: validation test coverage, fuzz targets per trust-boundary parser, injection findings, rejected malicious payloads, error leakage.
 Sources: OWASP ASVS and NIST SSDF.
 
 Secrets and credentials

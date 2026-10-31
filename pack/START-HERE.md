@@ -17,7 +17,7 @@ P4 - API and integration: choose REST/OpenAPI, gRPC, GraphQL, realtime/streaming
 P5 - Data, consistency, and privacy: choose storage models, transaction boundaries, consistency model, retention, classification, residency, deletion/export, and auditability.
 P6 - Security and compliance: threat model, authn/authz, validation, secrets, supply chain, SBOM, payment scope, privacy obligations, and audit evidence.
 P7 - Reliability and observability: define SLIs, SLOs, error budget, telemetry, incident response, RPO/RTO, resilience patterns, and capacity model.
-P8 - Delivery, testing, and supply chain: define CI/CD gates, test pyramid/portfolio, release strategy, feature flags, rollback, provenance, and dependency hygiene.
+P8 - Delivery, testing, and supply chain: define CI/CD gates, test pyramid/portfolio and test oracles, release strategy, feature flags, rollback, provenance, and dependency hygiene.
 P9 - Frontend, accessibility, and commercial model: choose app shape, state strategy, WCAG target, i18n, docs, billing model, metering, entitlements, and support model.
 P10 - ADR and verification review: write accepted/rejected decisions, evidence map, metrics, verification plan, owners, and review triggers.
 

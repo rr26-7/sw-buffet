@@ -34,8 +34,8 @@ Paste this into your agentic environment - Claude Code, OpenAI Codex, Gemini
 CLI, Qwen Code, Kimi CLI, Cursor, or any other agent that can read a
 repository - with your own brief at the end:
 
-    Use the sw-buffet pack v0.3.2 for this work: https://github.com/rr26-7/sw-buffet/tree/v0.3.2
-    Pack root: https://raw.githubusercontent.com/rr26-7/sw-buffet/v0.3.2/
+    Use the sw-buffet pack v0.3.3 for this work: https://github.com/rr26-7/sw-buffet/tree/v0.3.3
+    Pack root: https://raw.githubusercontent.com/rr26-7/sw-buffet/v0.3.3/
 
     Load pack files raw - a git clone of the tag or the raw URLs under the pack
     root - never through a web fetch that summarizes pages. Read

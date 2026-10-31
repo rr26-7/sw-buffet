@@ -31,7 +31,7 @@ Whenever a change touches authentication, tokens, money, migrations, or concurre
  
 Required output
 1. Findings list: each finding carries class (1-5), mapped gate number, severity, likelihood, evidence (file/line, doc anchor, test), and reachability ranking.
-2. Per-finding verification recommendation: which existing or new test, guard, or CI gate would catch recurrence; recommended tests must satisfy the Test Reality Guardrail (they must fail when the target defect is introduced; gate 30 self-verification applies to any proposed automated gate).
+2. Per-finding verification recommendation: which existing or new test, guard, or CI gate would catch recurrence; recommended tests must satisfy the Test Reality Guardrail (they must fail when the target defect is introduced; gate 30 self-verification applies to any proposed automated gate). For agent-written tests on risk-bearing behavior, also report whether each test names an independent oracle, whether the tests were written with author separation (Test Reality Guardrail), and the mutation or seeded-defect evidence that they can fail (page 09).
 3. Capability-stress score for the audited scope on the 1-11 scale below, with the dominant stress term named (breadth, rigor, knowledge boundary, concurrency, security semantics).
 4. Residual-risk statement listing what was NOT examined (budget discipline rule: spend remaining budget on untouched risk areas, not on deepening covered ones).
 5. Handoff: findings to Decision Steward, which records a gate result per finding and updates decision status (page 11); contradictions and unresolved conflicts to Orchestrator.

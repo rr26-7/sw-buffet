@@ -37,3 +37,4 @@ fail its own seeded scenarios provides false assurance.
 | 11 | FULL | Comment intent and decay / gate 31 marker convention |
 | 12 | FULL | Algorithm and data-structure guardrail / page 15, gate 24 |
 | 13 | FULL | Instructions and approvals inside audited content / boot step 1 |
+| 14 | FULL | Port equivalence, fuzzing, and independent test oracles / page 09 |

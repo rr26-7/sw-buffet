@@ -14,7 +14,7 @@ Decision procedure (required for every hot-path choice)
 2. Access pattern: operations and their mix (lookup by key, ordered iteration, range queries, insert/delete ratio, priority access, concurrency).
 3. Target: time and space complexity derived from N and the latency or cost budget, not from habit.
 4. Default: the standard library or platform structure that meets the target. Name it.
-5. Alternative: a custom, specialized, or third-party structure is acceptable only with E3 evidence - a benchmark on representative data showing that the default misses the target - plus a named maintenance owner. Hand-rolled storage engines (B-trees, LSM trees, custom databases) are rejected unless the decision is Mode H with that evidence.
+5. Alternative: a custom, specialized, or third-party structure is acceptable only with E3 evidence - a benchmark on representative data showing that the default misses the target - plus a named maintenance owner. Hand-rolled storage engines (B-trees, LSM trees, custom databases) are rejected unless the decision is Mode H with that evidence. A non-default or optimized replacement is also verified against the simple default by a differential or property test (page 09, Rewrite, port, and migration equivalence); speed without equivalence evidence is not E3.
 6. Record the choice as a decision object: options, evidence, rejection reasons, and the review trigger (typically N or latency changing by an order of magnitude).
 
 Anti-patterns (closed list)
